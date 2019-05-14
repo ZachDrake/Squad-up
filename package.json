@@ -1,0 +1,27 @@
+{
+  "name": "Squad-up",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run start-dev",
+    "client": "cd client && npm start",
+    "install-all": "cd client && npm i && cd .. && npm i && cd server && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZachDrake/Squad-up.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZachDrake/Squad-up/issues"
+  },
+  "homepage": "https://github.com/ZachDrake/Squad-up#readme",
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
