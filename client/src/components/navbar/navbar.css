@@ -4,8 +4,11 @@ body html {
     
 }
 
+        
 .navbar{
     background-color :#6C6C6C;
+    margin : 0;
+    width: 100%;
     
 }
 
