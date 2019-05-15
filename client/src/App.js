@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import './App.css';
-import Navbar from "./components/navbar/Navbar"
+import Lfs from "./components/LFS/Lfs"
 
 export default class App extends React.Component {
   state = {}
@@ -17,7 +17,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Lfs />
       </div>
     )
   }
