@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/ZachDrake/Squad-up#readme",
   "dependencies": {
-    "concurrently": "^4.1.0"
+    "concurrently": "^4.1.0",
+    "materialize-css": "^1.0.0-rc.2"
   }
 }
