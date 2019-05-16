@@ -1,6 +1,12 @@
-body html {
+body, html {
   padding : 0px;
   margin : 0px;
-  
+  background-color: #737373;
+
 }
 
+
+
+
+
+/* I need to fix the backround fit to screen and fix the navbar colors */

@@ -1,14 +1,21 @@
-body html {
+body ,html  {
     margin : 0;
     padding : 0;
+    background-image: #737373;
+    font-family: 'Abhaya Libre', serif;
+    
+}
+.nav-wrapper{
+    background-color :#737373;
+}
+
+.brand-logo {
+    display: inline;
+    background-color :#737373
     
 }
 
-        
-.navbar{
-    background-color :#6C6C6C;
-    margin : 0;
-    width: 100%;
-    
-}
 
+.lfs .login{
+    background-color :#737373 !important;
+}

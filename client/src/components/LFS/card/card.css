@@ -1,0 +1,32 @@
+
+
+.header {
+    text-align : center ;
+}
+
+.numOfMembers{
+    text-align: left;
+}
+
+.games{
+    text-align: center;
+}
+
+.typeSquad{
+    float : right;
+}
+
+/* Img stying  */
+img{
+    height: 25px;
+    width: 25px;
+    
+}
+ul#imgContainer li{
+    display: inline;
+    padding: 1px;
+}
+#imgContainer {
+    text-align: center;
+    margin: 0;
+}

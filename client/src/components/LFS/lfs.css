@@ -1,5 +1,11 @@
 #lfsTitle{
     text-align: center;
     padding-top: 30px;
-    background-color : #6C6C6C
+    
+}
+
+.style{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
