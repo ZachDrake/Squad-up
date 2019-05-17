@@ -1,8 +1,14 @@
 body, html {
   padding : 0px;
   margin : 0px;
-  background-color: #737373;
+  background-color: black;
+  overflow: scroll;
+  overflow-x: hidden;
+}
 
+::-webkit-scrollbar {
+  width: 0px; 
+  background: transparent;
 }
 
 
