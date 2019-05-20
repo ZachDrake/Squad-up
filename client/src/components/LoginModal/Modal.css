@@ -1,0 +1,21 @@
+.modal.modal-fixed-footer .modal-footer {
+    background-color: rgb(46, 40, 40); 
+    display:flex; 
+    justify-content: center;  
+}
+
+/* .modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-small, .modal .modal-footer .btn-flat  {
+    display:flex; 
+    justify-c
+} */
+
+.modal.modal-fixed-footer .modal-content {
+    background-color: rgb(17, 15, 15); 
+    color:white;
+}
+
+@media only screen and (max-width: 992px){
+.modal {
+    width:100vw; 
+}
+}
