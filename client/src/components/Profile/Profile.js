@@ -10,6 +10,7 @@ function Profile() {
             <Nav />
             <div >
                 <Jumbo />
+                <Frame />
             </div>
 
         </div>
