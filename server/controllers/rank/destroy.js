@@ -1,9 +1,9 @@
-const { Member } = require('../../models');
+const { Rank } = require('../../models');
 
 module.exports = async ({ params: { id } }, res) => {
     try {
-        let member = await Member.findById(id);
-        res.send(member);
+        let rank = await Rank.findByIdAndDelete(id);
+        res.send(rank);
     } catch (err) {
         if (err) {
             res.send(err);

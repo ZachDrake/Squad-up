@@ -3,6 +3,8 @@ module.exports = async (req, res) => {
         let squad = await res.locals.Squad.find();
         res.send(squad)
     } catch (err) {
-        if (err) throw err;
+        if (err) {
+            res.send(err);
+        }
     }
 }

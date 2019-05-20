@@ -14,6 +14,12 @@ const SquadSchema = new Schema({
             ref: 'Rank'
         }
     ],
+    members: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Member'
+        }
+    ],
     logo: {
         type: String,
         trim: true,
