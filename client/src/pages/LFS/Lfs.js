@@ -10,6 +10,7 @@ class Lfs extends Component {
     render() {
 
         const content = data.map(product => <Card product={product} />)
+        console.log(content)
         return (
             <div className="style">
                 <Navbar />

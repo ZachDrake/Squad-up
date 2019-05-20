@@ -4,7 +4,7 @@ function Jumbo() {
 
     const jumboStyle = {
         paddingBottom: "100px",
-        marginTop: "25px"
+        marginTop: "10vh"
     }
 
 

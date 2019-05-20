@@ -7,15 +7,14 @@ import overwatch from "./image/overwatch.png"
 
 
 function Card(props) {
-    console.log(props.product.Clan)
+
     return (
         <div className="container">
             <div className="col s12 m7">
 
                 <div className="card horizontal">
-
                     <div className="card-stacked">
-                        <div className="card-content">
+                        <a href="/profile"> <div className="card-content">
                             <p className="header"> {props.product.name} </p>
                             <div className="line" >
                                 <span className="numOfMembers"> Number of Members:  {props.product.members.length} </span>
@@ -30,7 +29,7 @@ function Card(props) {
                                 <li><img src={overwatch} alt="league"></img></li>
 
                             </ul>
-                        </div>
+                        </div> </a>
 
                     </div>
 
