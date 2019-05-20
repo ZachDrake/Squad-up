@@ -1,21 +1,22 @@
 import React from "react";
-import "./navbar.css";
 
-// import M from "materialize-css/dist/js/materialize.min.js";
+import "./navbar.css"
+import M from "materialize-css/dist/js/materialize.min.js";
+
 // import {BrowseRouter as Router, Route, Switch} from "react-router-dom"; 
 
 
 
 class Navbar extends React.Component {
 
-    // componentDidMount() {
-    //     const elem = document.querySelector(".sidenav");
-    //     const instance = M.Sidenav.init(elem, {
-    //         edge: "left",
-    //         inDuration: 250
-    //     })
+    componentDidMount() {
+        const elem = document.querySelector(".sidenav");
+        const instance = M.Sidenav.init(elem, {
+            edge: "left",
+            inDuration: 250
+        })
 
-    // }
+    }
 
     render() {
         return (

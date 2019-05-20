@@ -9,13 +9,13 @@ class Lfs extends Component {
 
     render() {
 
-        const test = data.map(product => <Card product={product} />)
+        const content = data.map(product => <Card product={product} />)
         return (
             <div className="style">
                 <Navbar />
 
                 <h1 id="lfsTitle"> Looking for a Squad?</h1>
-                {test}
+                {content}
 
 
             </div>
