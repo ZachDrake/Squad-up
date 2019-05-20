@@ -6,6 +6,8 @@ import LFS from "./components/LFS/Lfs"
 import Home from "./pages/Home/Home"
 import Footer from "./components/Footer/Footer"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import LoginModal from "./components/LoginModal/LoginModal";
+
 export default class App extends React.Component {
   state = {}
 
@@ -25,11 +27,14 @@ export default class App extends React.Component {
 
 
         <Navbar />
+        <LoginModal />
+
         <Switch>
 
         <Route exact path="/" component={Home} />
         
         <Route exact path="/lfs" component={LFS} />
+
         </Switch>
         
         <Footer />

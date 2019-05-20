@@ -1,6 +1,7 @@
 .tint>img {
     width:100%; 
     height:100%;
+    
 }
 
 .tint{
@@ -12,6 +13,9 @@
         height:100%;
         opacity:0.3;
         background-color:black; 
+        filter: blur(4px);
+  -webkit-filter: blur(4px);
+
 }
 
 #homeHeader>h1 {
@@ -22,5 +26,5 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: calc(22% + 25px);
+    margin-top: calc(16% + 40px);
 }
