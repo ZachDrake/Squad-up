@@ -3,25 +3,21 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const RankSchema = new Schema({
-    leader: {
+    squad: 
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Squad'
+        },
+    member: 
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Member'
+        },
+    value:
+    {
         type: String,
-        trim: true,
-        unique: true
-    },
-    officer: {
-        type: String,
-        trim: true,
-        unique: true
-    },
-    member: {
-        type: String,
-        trim: true,
-        unique: true
-    },
-    recruit: {
-        type: String,
-        trim: true,
-        unique: true
+        required: true,
+        default: "Recruit"
     }
 });
 
