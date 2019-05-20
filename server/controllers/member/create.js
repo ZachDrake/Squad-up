@@ -3,6 +3,8 @@ module.exports = async (req, res) => {
         let member = await res.locals.Member.create(req.body);
         res.send(member);
     } catch (err) {
-        if (err) throw err;
+        if (err) {
+            res.send(err);
+        }
     }
 }

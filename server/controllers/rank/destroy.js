@@ -5,6 +5,8 @@ module.exports = async ({ params: { id } }, res) => {
         let rank = await Rank.findByIdAndDelete(id);
         res.send(rank);
     } catch (err) {
-        if (err) throw err
+        if (err) {
+            res.send(err);
+        }
     }
 }

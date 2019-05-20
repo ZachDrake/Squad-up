@@ -5,6 +5,8 @@ module.exports = async ({ params: { id }, body }, res) => {
         let squad = await Squad.findByIdAndUpdate(id, body, {new: true});
         res.send(squad);
     } catch (err) {
-        if (err) throw err
+        if (err) {
+            res.send(err);
+        }
     }
 }

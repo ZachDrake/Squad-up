@@ -6,6 +6,8 @@ module.exports = async ({ params: { id }, body }, res) => {
         let rank = await Rank.findByIdAndUpdate(id, body, {new: true});
         res.send(rank);
     } catch (err) {
-        if (err) throw err
+        if (err) {
+            res.send(err);
+        }
     }
 }
