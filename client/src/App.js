@@ -8,6 +8,8 @@ import Profile from "./components/Profile/Profile"
 import Footer from "./components/Footer/Footer"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LoginModal from "./components/LoginModal/LoginModal";
+import SignupModal from "./components/LoginModal/SignupModal"
+import LFP from "./pages/LFP/Lfp"
 
 export default class App extends React.Component {
   state = {}
@@ -28,20 +30,21 @@ export default class App extends React.Component {
 
 
 
-        <Navbar />
-        <LoginModal />
+          <Navbar />
+          <LoginModal />
+          <SignupModal />
 
-        <Switch>
+          <Switch>
 
-        <Route exact path="/" component={Home} />
-        
-        <Route exact path="/lfs" component={LFS} />
-   <Route exact path="/profile" component={Profile} /
-        </Switch>
-        
-        <Footer />
-      </div>
-    </Router>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/lfp" component={LFP} />
+            <Route exact path="/lfs" component={LFS} />
+            <Route exact path="/profile" component={Profile} />
+          </Switch>
+
+          <Footer />
+        </div>
+      </Router>
 
     )
   }

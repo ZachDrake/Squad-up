@@ -29,16 +29,19 @@ class Navbar extends React.Component {
                             <a href="/" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                             <ul className="right hide-on-med-and-down">
                                 <li className="lfs"><a href="/lfs">LFSquad</a></li>
+                                <li className="lfs"><a href="/lfp">LFPlayers</a></li>
                                 <li className="Login"> <a className="modal-trigger" href="#modal1">Login</a></li>
+                                <li className="signUp"><a className="modal-trigger" href="#modal2">Sign Up</a></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
 
-                <ul className="sidenav" id="mobile-demo">
+                <ul className="sidenav" id="mobile-demo" style={{ marginTop: "7vh" }}>
                     <li className="lfs"><a href="/lfs">LFSquad</a></li>
-                    <li className="login"><a className="modal-trigger" href="#modal1">Login/Signup</a></li>
-
+                    <li className="lfs"><a href="/lfp">LFPlayers</a></li>
+                    <li className="login"><a className="modal-trigger" href="#modal1">Login</a></li>
+                    <li className="signUp"><a className="modal-trigger" href="#modal2">Sign Up</a></li>
 
                 </ul>
 
