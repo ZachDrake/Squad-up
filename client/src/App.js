@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './App.css';
 import Navbar from "./components/navbar/Navbar"
-import LFS from "./components/LFS/Lfs"
+import LFS from "./pages/LFS/Lfs"
 import Home from "./pages/Home/Home"
 import Profile from "./components/Profile/Profile"
 import Footer from "./components/Footer/Footer"
