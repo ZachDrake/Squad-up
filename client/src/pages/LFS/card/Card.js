@@ -15,10 +15,10 @@ function Card(props) {
                 <div className="card horizontal">
                     <div className="card-stacked">
                         <a href="/profile"> <div className="card-content">
-                            <p className="header"> {props.product.name} </p>
+                            <p className="header"> {props.squad.name} </p>
                             <div className="line" >
-                                <span className="numOfMembers"> Number of Members:  {props.product.members.length} </span>
-                                <span className="typeSquad"> Type of Gamers :  {props.product.type} </span>
+                                <span className="numOfMembers"> Number of Members:  {props.squad.members.length} </span>
+                                <span className="typeSquad"> Type of Gamers :  {props.squad.type} </span>
                             </div>
 
 
