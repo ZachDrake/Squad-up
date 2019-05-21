@@ -1,22 +1,43 @@
 import React from "react";
-import "./Modal.css"; 
+import "./Modal.css";
+import LoginForm from "../LoginForm";
 
 
 class LoginModal extends React.Component {
 
+    state ={
+        email: "", 
+        password: ""
+    }
+
+
+    handleInputChange = event => {
+        const name = event.target.name;
+        const value = event.target.value;
+        this.setState({
+          [name]: value
+        });
+      };
+
+      handleFormSubmit = event => {
+        event.preventDefault();
+        console.log (this.state);
+        
+      };
+
     render() {
+
         return (
 
-            <div id="modal1" className="modal modal-fixed-footer">
-                <div className="modal-content">
-                    <h4>Login To your Account</h4>
-                    <p>Form goes here UWU</p>
+           
+                <div>
+                    <LoginForm
+                        email={this.state.email}
+                        password={this.state.password}
+                        handleFormSubmit={this.handleFormSubmit}
+                        handleInputChange={this.handleInputChange}
+                    />
                 </div>
-                <div className="modal-footer">
-                    <a href="#!" className="modal-close btn">Login Beeitch</a>
-                    
-                </div>
-            </div>
         )
 
     }

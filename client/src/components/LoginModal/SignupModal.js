@@ -1,39 +1,42 @@
 import React from "react";
 import "./Modal.css";
+import Form from "../SignupForm"; 
 
 
 class Signup extends React.Component {
+    state ={
+        username: "",
+        email: "", 
+        password: ""
+    }
+
+
+    handleInputChange = event => {
+        const name = event.target.name;
+        const value = event.target.value;
+        this.setState({
+          [name]: value
+        });
+      };
+
+      handleFormSubmit = event => {
+        event.preventDefault();
+       console.log (this.state);
+      };
+
 
     render() {
         return (
-
-            <div id="modal2" className="modal modal-fixed-footer">
-                <div className="modal-content signup">
-                    <h4>Sign Up</h4>
-                    <div className="row">
-                        <form className="col s12">
-                            <div className="row">
-                                <div className="input-field col s6">
-                                    <input placeholder="name" id="Name" style={{ color: "white" }}></input>
-                                </div>
-                                <div className="input-field col s6">
-                                    <input placeholder="email" id="email" style={{ color: "white" }}></input>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input id="password" type="password" class="validate" style={{ color: "white" }}></input>
-                                    <label for="password">Password</label>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div className="modal-footer">
-                    <a href="#!" className="modal-close btn">Login Beeitch</a>
-
-                </div>
+            <div>
+                <Form 
+                username = {this.state.username}
+                email = {this.state.email}
+                password = {this.state.password}
+                handleFormSubmit = {this.handleFormSubmit}
+                handleInputChange = {this.handleInputChange}                 
+                />
             </div>
+
         )
 
     }
