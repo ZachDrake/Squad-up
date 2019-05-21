@@ -1,10 +1,11 @@
 const { all, getOne, create, update, destroy } = require('../controllers/squad');
-const { Squad } = require('../models');
+const { Squad, Member} = require('../models');
 
 const router = require('express').Router();
 
 router.use((req, res, next) => {
     res.locals.Squad = Squad;
+    res.locals.Member = Member;
     next();
 })
 
@@ -14,7 +15,7 @@ router.post('/create', create);
 
 router.get('/:id', getOne);
 
-router.put('/update/:id', update);
+router.put('/update/:squadName/:name', update);
 
 router.delete('/delete/:id', destroy);
 
