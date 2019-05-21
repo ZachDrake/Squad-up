@@ -12,11 +12,15 @@
 .modal.modal-fixed-footer .modal-content {
     background-color: rgb(17, 15, 15); 
     color:white;
+    
 }
 
+input{
+    color:white; 
+}
+ 
 @media only screen and (max-width: 992px){
 .modal {
     width:100vw; 
 }
 }
-

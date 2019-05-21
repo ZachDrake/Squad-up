@@ -8,7 +8,7 @@ import Profile from "./components/Profile/Profile"
 import Footer from "./components/Footer/Footer"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LoginModal from "./components/LoginModal/LoginModal";
-import SignupModal from "./components/LoginModal/SignupModal"
+import SignupModal from "./components/LoginModal/SignupModal";
 import LFP from "./pages/LFP/Lfp"
 
 export default class App extends React.Component {
