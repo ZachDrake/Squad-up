@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import './App.css';
 import Navbar from "./components/navbar/Navbar"
 import LFS from "./pages/LFS/Lfs"
@@ -18,24 +18,24 @@ export default class App extends React.Component {
 
   }
 
-  componentDidMount() {
-    axios.get('/squads/all')
-    .then(result => {
-       console.log(result);
-      let squads = result.data;
-      this.setState({ squads })
-    }).catch(err => {
-      if (err) throw err;
-    });
+  // componentDidMount() {
+  //   axios.get('/squads/all')
+  //   .then(result => {
+  //      console.log(result);
+  //     let squads = result.data;
+  //     this.setState({ squads })
+  //   }).catch(err => {
+  //     if (err) throw err;
+  //   });
 
-    axios.get('/members/all')
-    .then(result => {
-      let members = result.data;
-      this.setState({ members })
-    }).catch(err => {
-      if (err) throw err;
-    });
-  }
+  //   axios.get('/members/all')
+  //   .then(result => {
+  //     let members = result.data;
+  //     this.setState({ members })
+  //   }).catch(err => {
+  //     if (err) throw err;
+  //   });
+  // }
 
   render() {
     return (
