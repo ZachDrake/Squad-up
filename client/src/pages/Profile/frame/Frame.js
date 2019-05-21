@@ -12,21 +12,23 @@ function Frame() {
                             <img src="https://i.stack.imgur.com/34AD2.jpg " className="circle responsive-img" alt="test"></img>
                         </div>
 
-                        <div className="card profile resizeCard">
+                        <div className=" profile ">
                             <div className="profile-content center-align">
                                 <p>Name</p>
                                 <p >Squad</p>
                             </div>
                         </div>
 
+
                     </div>
 
-                    <div className="card games resizeCard">
+                    <div className="card games ">
                         <div className="gamesTitle center-align">
                             <p>Games they play</p>
                             <div className="row">
                                 <div className="col s3">
                                     <p>Stuff</p>
+
                                 </div>
                             </div>
                         </div>

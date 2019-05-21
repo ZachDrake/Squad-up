@@ -28,3 +28,21 @@
     width: 100%;
     margin-top: calc(16% + 40px);
 }
+
+.subContent{
+margin-top : 4vh;
+}
+
+
+.mainCardContent{
+    background-color: #17141D;
+    color: white;
+    width: 100vh;
+    border-style: outset;
+    
+}
+
+.mainContainerContent{
+   display: flex;
+
+}

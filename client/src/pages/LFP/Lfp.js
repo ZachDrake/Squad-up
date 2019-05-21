@@ -13,7 +13,7 @@ function Lfp() {
     return (
         <div className="style">
             <div className="style">
-                <h1 id="lfpTitle"> Looking for a Players?</h1>
+                <h1 id="lfpTitle"> Looking for players?</h1>
                 <div className="container">
                     <div className="row">
                         <div className="col s12">

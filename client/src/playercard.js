@@ -1,4 +1,5 @@
 const data = [
+
     {
         "id": 1,
         "name": "Berries",
@@ -13,7 +14,7 @@ const data = [
         "id": 2,
         "name": "someone",
         "joined": "2/2019",
-        "aboutMe": "Yo momma",
+        "aboutMe": "something",
         "gamesPlayed": ["league", "ow"],
 
 
@@ -23,7 +24,7 @@ const data = [
         "id": 3,
         "name": "asdasd",
         "joined": "2/2019",
-        "aboutMe": "Yo momma",
+        "aboutMe": "test",
         "gamesPlayed": ["league", "ow"],
 
 
@@ -33,7 +34,7 @@ const data = [
         "id": 4,
         "name": "asdas",
         "joined": "2/2019",
-        "aboutMe": "Yo momma",
+        "aboutMe": "look",
         "gamesPlayed": ["league", "ow"],
 
 
@@ -42,8 +43,8 @@ const data = [
         "id": 4,
         "name": "asdas",
         "joined": "2/2019",
-        "aboutMe": "Yo momma",
-        "gamesPlayed": ["league", "ow"],
+        "aboutMe": "kasjdkj",
+        "gamesPlayed": ["aslkd"],
 
 
 
@@ -52,7 +53,7 @@ const data = [
         "id": 4,
         "name": "asdas",
         "joined": "2/2019",
-        "aboutMe": "Yo momma",
+        "aboutMe": "lkasdfj",
         "gamesPlayed": ["league", "ow"],
 
 
