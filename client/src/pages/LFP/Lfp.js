@@ -1,15 +1,10 @@
 import React from "react";
 import "./lfp.css";
-import data from "../../playercard"
 import Playercard from "./card/Playercard"
 
 
-function Lfp() {
+function Lfp(props) {
 
-
-
-    const content = data.map(product => <Playercard product={product} />)
-    console.log(content)
     return (
         <div className="style">
             <div className="style">
@@ -17,7 +12,7 @@ function Lfp() {
                 <div className="container">
                     <div className="row">
                         <div className="col s12">
-                            {content}
+                            {props.members.map(member => <Playercard member={member}/>)}
 
                         </div>
                     </div>

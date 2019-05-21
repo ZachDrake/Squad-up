@@ -3,9 +3,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const MemberSchema = new Schema({
-    memberName: {
+    name: {
         type: String,
         trim: true,
+        index: true,
         required: 'Member Name is Required'
     },
     email: {
@@ -28,6 +29,6 @@ const MemberSchema = new Schema({
     timestamps: true
 });
 
-let Member = mongoose.model('Members', MemberSchema);
+let Member = mongoose.model('Member', MemberSchema);
 
 module.exports = Member;

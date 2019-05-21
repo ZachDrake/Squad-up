@@ -1,28 +1,22 @@
-import React, { Component } from "react";
+import React from "react";
 import "./lfs.css";
 import Card from "../LFS/card/Card";
-import data from "../../test"
 
 
-class Lfs extends Component {
-
-    render() {
-
-        const content = data.map(product => <Card product={product} />)
-        console.log(content)
+function Lfs(props) {
+        
+        // console.log(content)
         return (
             <div className="style">
 
-
                 <h1 id="lfsTitle"> Looking for a Squad?</h1>
-                {content}
+                {props.squads.map(squad => <Card key={squad._id} squad={squad} />)}
 
 
             </div>
 
 
         )
-    }
 }
 
 
