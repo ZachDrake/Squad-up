@@ -6,6 +6,7 @@ import moment from "moment"
 function Playercard(props) {
     console.log(props);
     return (
+
         <div className="col s3">
             <a href="/profile"><div className="card">
                 <div className="card-img center-align">
@@ -14,9 +15,11 @@ function Playercard(props) {
                 <p className="card-title">{props.member.memberName}</p>
                 <div className="card-content">
                     <p>{moment(props.member.createdAt).format('LL')}</p>
+
                 </div>
             </div></a>
         </div>
+
     )
 
 }

@@ -15,9 +15,8 @@ function Jumbo() {
                 <div class="card horizontal" style={jumboStyle}>
                     <div class="card-stacked">
                         <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                            <p>About me</p>
                         </div>
-
                     </div>
                 </div>
             </div>
