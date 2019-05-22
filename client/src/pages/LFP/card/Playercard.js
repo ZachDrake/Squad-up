@@ -12,7 +12,7 @@ function Playercard(props) {
                 <div className="card-img center-align">
                     <img className="circle responsive-img center-align" src="https://i.stack.imgur.com/34AD2.jpg" alt="test"></img>
                 </div>
-                <p className="card-title">{props.member.memberName}</p>
+                <p className="card-title">{props.member.name}</p>
                 <div className="card-content">
                     <p>{moment(props.member.createdAt).format('LL')}</p>
 

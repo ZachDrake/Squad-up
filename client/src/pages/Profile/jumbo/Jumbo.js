@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Jumbo() {
+function Jumbo(props) {
 
     const jumboStyle = {
         paddingBottom: "100px",
@@ -11,11 +11,11 @@ function Jumbo() {
     return (
 
         <div className="container">
-            <div class="col s12 m7">
-                <div class="card horizontal" style={jumboStyle}>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <p>About me</p>
+            <div className="col s12 m7">
+                <div className="card horizontal" style={jumboStyle}>
+                    <div className="card-stacked">
+                        <div className="card-content">
+                            <p>{props.info.description}</p>
                         </div>
                     </div>
                 </div>
