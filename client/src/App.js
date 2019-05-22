@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from "./components/navbar/Navbar"
 import LFS from "./pages/LFS/Lfs"
 import Home from "./pages/Home/Home"
-import Profile from "./components/Profile/Profile"
+import Profile from "./pages/Profile/Profile"
 import Footer from "./components/Footer/Footer"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LoginModal from "./components/LoginModal/LoginModal";

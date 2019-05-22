@@ -12,7 +12,7 @@ function Card(props) {
         <div className="container">
             <div className="col s12 m7">
 
-                <div className="card horizontal">
+                <div className="card horizontal playerCard">
                     <div className="card-stacked">
                         <a href={link}> <div className="card-content">
                             <p className="header"> {props.squad.name} </p>
