@@ -1,0 +1,18 @@
+.formContainer{
+    margin-top: 10vh;
+    color: white;
+    background-color : gray;
+}
+
+.createChoices{
+margin-left: 1vw;
+
+}
+
+.createChoices span {
+    color:white;
+}
+
+.buttonz{
+    margin-left: 44vw;
+}

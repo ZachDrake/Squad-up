@@ -9,6 +9,7 @@ import Footer from "./components/Footer/Footer"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LoginModal from "./components/LoginModal/LoginModal";
 import SignupModal from "./components/LoginModal/SignupModal";
+import Createsquad from "./pages/createsquad/Createsquad"
 import LFP from "./pages/LFP/Lfp"
 
 export default class App extends React.Component {
@@ -45,10 +46,13 @@ export default class App extends React.Component {
           <SignupModal />
 
           <Switch>
-            <Route exact path="/" render={(props) => <Home {...props}/>} />
-            <Route exact path="/lfp" render={(props) => <LFP members={this.state.members} {...props}/>} />
-            <Route exact path="/lfs" render={(props) => <LFS squads={this.state.squads} {...props}/>} />
-            <Route exact path="/profile/*" render={(props) => <Profile {...props}/>} />
+
+            <Route exact path="/" render={(props) => <Home {...props} />} />
+            <Route exact path="/createsquad" render={(props) => <Createsquad {...props} />} />
+            <Route exact path="/lfp" render={(props) => <LFP members={this.state.members} {...props} />} />
+            <Route exact path="/lfs" render={(props) => <LFS squads={this.state.squads} {...props} />} />
+            <Route exact path="/profile" render={(props) => <Profile {...props} />} />
+
           </Switch>
 
           <Footer />

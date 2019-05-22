@@ -22,8 +22,6 @@ class Home extends Component {
                 </div>
 
                 <div className="mainContainerContent">
-
-
                     <div className="card mainCardContent ">
                         <div className="card-img center-align ">
                             <img className="responsive-img" src="https://img.icons8.com/cotton/64/000000/laptop.png" alt=""></img>
@@ -33,7 +31,6 @@ class Home extends Component {
                             <p className="center-align">Get your squad or find a squad to enjoy your favorite games</p>
                         </div>
                     </div>
-
 
                     <div className="card mainCardContent">
                         <div className="card-img center-align ">
