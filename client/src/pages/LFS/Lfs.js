@@ -1,18 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
 import "./lfs.css";
 import Card from "../LFS/card/Card";
 
 
 function Lfs(props) {
         
-        // console.log(content)
         return (
             <div className="style">
 
                 <h1 id="lfsTitle"> Looking for a Squad?</h1>
                 {props.squads.map(squad => <Card key={squad._id} squad={squad} />)}
-
-
             </div>
 
 

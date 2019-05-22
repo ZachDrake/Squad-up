@@ -7,14 +7,14 @@ import overwatch from "./image/overwatch.png"
 
 
 function Card(props) {
-
+    let link = `/profile/${props.squad.name}`;
     return (
         <div className="container">
             <div className="col s12 m7">
 
                 <div className="card horizontal">
                     <div className="card-stacked">
-                        <a href="/profile"> <div className="card-content">
+                        <a href={link}> <div className="card-content">
                             <p className="header"> {props.squad.name} </p>
                             <div className="line" >
                                 <span className="numOfMembers"> Number of Members:  {props.squad.members.length} </span>

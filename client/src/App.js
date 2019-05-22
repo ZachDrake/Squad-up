@@ -21,7 +21,6 @@ export default class App extends React.Component {
   componentDidMount() {
     axios.get('/squads/all')
     .then(result => {
-       console.log(result);
       let squads = result.data;
       this.setState({ squads })
     }).catch(err => {
@@ -49,7 +48,7 @@ export default class App extends React.Component {
             <Route exact path="/" render={(props) => <Home {...props}/>} />
             <Route exact path="/lfp" render={(props) => <LFP members={this.state.members} {...props}/>} />
             <Route exact path="/lfs" render={(props) => <LFS squads={this.state.squads} {...props}/>} />
-            <Route exact path="/profile" render={(props) => <Profile {...props}/>} />
+            <Route exact path="/profile/*" render={(props) => <Profile {...props}/>} />
           </Switch>
 
           <Footer />

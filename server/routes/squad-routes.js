@@ -13,7 +13,7 @@ router.get('/all', all);
 
 router.post('/create', create);
 
-router.get('/:id', getOne);
+router.get('/:name', getOne);
 
 router.put('/update/:squadName/:name', update);
 

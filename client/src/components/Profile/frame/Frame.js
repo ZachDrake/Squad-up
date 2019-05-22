@@ -2,7 +2,7 @@ import React from "react";
 import "./frame.css"
 
 
-function Frame() {
+function Frame(props) {
     return (
         <div className="container">
             <div className="row">
@@ -14,8 +14,7 @@ function Frame() {
 
                         <div className="card profile resizeCard">
                             <div className="profile-content center-align">
-                                <p>Name</p>
-                                <p >Squad</p>
+                                <p>{props.info.name}</p> 
                             </div>
                         </div>
 
@@ -23,7 +22,8 @@ function Frame() {
 
                     <div className="card games resizeCard">
                         <div className="gamesTitle center-align">
-                            <p>Games they play</p>
+                            <p>Games played:</p>
+                            <p>{props.info.games}</p>
                             <div className="row">
                                 <div className="col s3">
                                     <p>Stuff</p>
@@ -40,9 +40,9 @@ function Frame() {
                         </div>
 
 
-                        <div class="card horizontal">
-                            <div class="card-stacked">
-                                <div class="card-content">
+                        <div className="card horizontal">
+                            <div className="card-stacked">
+                                <div className="card-content">
                                     <p>I am a very simple card. I am good at containing small bits of information.</p>
                                 </div>
                             </div>
