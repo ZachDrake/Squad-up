@@ -1,11 +1,17 @@
 import React from "react";
 import "./createsquad.css"
-
+// import Axios from "axios";
 
 
 
 class Createsquad extends React.Component {
     state = {
+        squadname: "",
+        logo: "",
+        description: "",
+        squadType: "",
+        discord: "",
+        games: ""
     }
 
     handleInputChange = event => {
@@ -17,6 +23,21 @@ class Createsquad extends React.Component {
         })
     }
 
+    handleFormSubmit = event => {
+        event.preventDefault();
+        console.log("hit");
+        let newSquad = {
+            name: this.state.squadname,
+            logo: this.state.logo,
+            description: this.state.description,
+            squadType: this.state.squadType,
+            discord: this.state.discord,
+            games: this.state.games
+        }
+        console.log(newSquad);
+    }
+
+
 
 
     render(props) {
@@ -25,7 +46,7 @@ class Createsquad extends React.Component {
                 <div className="createTitle">
                     <h1 className="center-align">Create a Squad</h1>
                     <div className="row">
-                        <form onSubmit={this.handleFormSubmit} className="input-field col s12">
+                        
                             <div className="row">
                                 <div className="input-field col s6">
                                     <h5>Name of Squad</h5>
@@ -54,25 +75,26 @@ class Createsquad extends React.Component {
                                         <p>
                                             <label>
                                                 <input type="checkbox" />
-                                                <span>Overwatch</span>
+                                                <span value="OverWatch">Overwatch</span>
                                             </label>
                                         </p>
                                         <p>
                                             <label>
                                                 <input type="checkbox" />
-                                                <span>Counter-Strike Global Offensive</span>
+                                               
+                                                <span value="Counter-Strike Global Offensive">Counter-Strike Global Offensive</span>
                                             </label>
                                         </p>
                                         <p>
                                             <label>
                                                 <input type="checkbox" />
-                                                <span>Dota 2</span>
+                                                <span value="Dota 2">Dota 2</span>
                                             </label>
                                         </p>
                                         <p>
                                             <label>
                                                 <input type="checkbox" />
-                                                <span>League of Legends</span>
+                                                <span value="League of Legends">League of Legends</span>
                                             </label>
                                         </p>
                                     </div>
@@ -83,49 +105,51 @@ class Createsquad extends React.Component {
                                         <p>
                                             <label>
                                                 <input name="group1" type="radio" />
-                                                <span>Pro</span>
+                                                <span value="Pro">Pro</span>
                                             </label>
                                         </p>
                                         <p>
                                             <label>
                                                 <input name="group1" type="radio" />
-                                                <span>Semi-Pro</span>
+                                                <span value="Semi-Pro">Semi-Pro</span>
                                             </label>
                                         </p>
                                         <p>
                                             <label>
                                                 <input name="group1" type="radio" />
-                                                <span>Casual</span>
+                                                <span value="Casual">Casual</span>
                                             </label>
                                         </p>
                                         <p>
                                             <label>
                                                 <input name="group1" type="radio" />
-                                                <span>Plebs</span>
+                                                <span value="Plebs">Plebs</span>
                                             </label>
                                         </p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col s12">
+                            <div className="col s12">
                                 <h5>Discord</h5>
                                 https://discord.gg/
-                                    <div class="input-field inline">
+                                    <div className="input-field inline">
+                                    
                                     <input
+                                        placeholder="discord"
+                                        name="discord"
                                         id="discord"
                                         type="text"
                                     />
-                                    <label for="discord">9WdNHaV</label>
-                                    <span class="helper-text" data-error="wrong" data-success="right">Enter the last 7 characters in your permanent discord link</span>
+                                    <span className="helper-text" data-error="wrong" data-success="right">Enter the last 7 characters in your permanent discord link</span>
                                 </div>
                             </div>
 
 
 
-                            <a className="grey darken-3 btn buttonz " href="/lfs" >Submit</a>
+                            <a className="grey darken-3 btn buttonz " href="#" >Submit</a>
 
-                        </form>
+                        
                     </div>
                 </div>
             </div >

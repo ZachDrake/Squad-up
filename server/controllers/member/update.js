@@ -8,7 +8,7 @@ module.exports = async ({ params: {name, memberName} }, res) => {
         try {
             let member = await Member.findOne({name: memberName});
             console.log(member);
-            member.squad.push(squad._id);
+            member.squad.push(squad.name);
             member.save();
             res.send(member);
         } catch (err) {

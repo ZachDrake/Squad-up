@@ -11,12 +11,12 @@ class Squadprofile extends React.Component {
 
     componentDidMount() {
 
-        console.log(this.props.match.params[0])
+        // console.log(this.props.match.params[0])
         Axios.get(`/squads/${this.props.match.params[0]}`)
             .then(results => {
 
                 let squadInfo = results.data;
-                console.log(results.data);
+                // console.log(results.data);
                 this.setState({ squadInfo });
             })
     }
