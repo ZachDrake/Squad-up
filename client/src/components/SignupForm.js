@@ -29,6 +29,7 @@ function SignupForm(props) {
                                     name="email"
                                     type="text"
                                     className="form-control"
+                                    autoComplete="current-password"
                                     placeholder="email"
                                     id="email"
                                 />
@@ -43,6 +44,7 @@ function SignupForm(props) {
                                     name="password"
                                     type="password"
                                     className="form-control"
+                                    autoComplete="current-password"
                                     placeholder="password"
                                     id="password"
                                 />

@@ -4,7 +4,7 @@ import "./frame.css"
 
 function Frame(props) {
 
-
+    console.log(props)
     return (
         <div className="container">
             <div className="row">
