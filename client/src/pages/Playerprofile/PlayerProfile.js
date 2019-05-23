@@ -13,7 +13,7 @@ class Profile extends React.Component {
     componentDidMount() {
 
         console.log(this.props.match.params)
-        Axios.get(`/members/${this.props.match.params[0]}`)
+        Axios.get(`/members/profile/${this.props.match.params[0]}`)
             .then(results => {
                 console.log(results)
                 let squadInfo = results;

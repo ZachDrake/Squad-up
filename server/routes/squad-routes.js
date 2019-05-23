@@ -1,5 +1,5 @@
 const { all, getOne, create, update, destroy } = require('../controllers/squad');
-const { Squad, Member} = require('../models');
+const { Squad, Member } = require('../models');
 
 const router = require('express').Router();
 
@@ -13,7 +13,9 @@ router.get('/all', all);
 
 router.post('/create', create);
 
-router.get('/:name', getOne);
+router.get('/profile/:name', getOne);
+
+router.get('/profile', getOne);
 
 router.put('/update/:squadName/:name', update);
 

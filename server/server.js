@@ -17,16 +17,12 @@ app.use(express.static('public'));
 app.use(require('./routes'));
 
 app.get('/', (req, res) => {
-
     res.send('');
 });
 
 app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/public/', '../client/public/index.html'))
+    res.sendFile(path.join(__dirname, '../client/public/index.html'));
 });
-
-
-
 
 
 app.listen(PORT, function () {

@@ -13,7 +13,9 @@ router.get('/all', all);
 
 router.post('/create', create);
 
-router.get('/:name', getOne);
+router.get('/profile/:name', getOne);
+
+router.get('/profile', getOne);
 
 router.put('/update/:memberName/:name', update);
 
