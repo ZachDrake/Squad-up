@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/*', (req, res) => {
-    res.sendFile('../client/public/index.html', { root: path.join(__dirname, '../client/public/') })
+    res.sendFile(path.join(__dirname, '../client/public/', '../client/public/index.html'))
 });
 
 
