@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-function SignupForm(props) {
+function SignupForm (props) {
     return (
 
         <div id="modal2" className="modal modal-fixed-footer">
