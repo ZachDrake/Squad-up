@@ -6,7 +6,7 @@ module.exports = async ({ params: { name } }, res) => {
     console.log(name);
     if (name) {
         try {
-            let member = await Member.findOne({ name: name });
+            let member = await Member.findOne({ name: name }).populate('squads');
             res.send(member);
         } catch (err) {
             if (err) {

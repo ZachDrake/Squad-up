@@ -15,7 +15,7 @@ function Jumbo(props) {
                 <div className="card horizontal" style={jumboStyle}>
                     <div className="card-stacked">
                         <div className="card-content">
-                            <p>{props.info.description}</p>
+                            {/* <p>{props.info.description}</p> */}
                         </div>
                     </div>
                 </div>

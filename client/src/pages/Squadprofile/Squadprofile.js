@@ -6,23 +6,21 @@ import Axios from "axios";
 
 class Squadprofile extends React.Component {
     state = {
-        squadInfo: []
+        squadInfo: {
+            members: []
+        }
     }
 
     componentDidMount() {
 
-<<<<<<< Updated upstream
-        // console.log(this.props.match.params[0])
-        Axios.get(`/squads/${this.props.match.params[0]}`)
-=======
         console.log(this.props.match.params[0])
         Axios.get(`/squads/profile/${this.props.match.params[0]}`)
->>>>>>> Stashed changes
             .then(results => {
-
                 let squadInfo = results.data;
                 // console.log(results.data);
-                this.setState({ squadInfo });
+                this.setState({ squadInfo }, () => {
+                    console.log(this.state)
+                });
             })
     }
 
