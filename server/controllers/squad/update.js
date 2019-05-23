@@ -2,7 +2,7 @@ const { Squad } = require('../../models');
 
 module.exports = async ({ params: {name, squadName} }, res) => {
     try {
-        let member = await res.locals.Member.findOne({memberName: name});
+        let member = await res.locals.Member.findOne({name: name});
         console.log(member._id);
         try {
             let squad = await Squad.findOne({name: squadName});
