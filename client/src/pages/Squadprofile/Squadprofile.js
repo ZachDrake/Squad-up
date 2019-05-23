@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./squadprofile.css"
 import Jumbo from "./jumbo/Jumbo"
 import Frame from "./frame/Frame"

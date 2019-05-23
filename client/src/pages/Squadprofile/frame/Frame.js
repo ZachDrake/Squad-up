@@ -4,9 +4,10 @@ import "./frame.css"
 
 function Frame(props) {
     return (
-        <div className="container">
+        <div className="container squadMainContent">
             <div className="row">
-                <div className="col s2 content">
+
+                <div className="col s12 m3  content left">
                     <div className="card cardMain">
                         <div className="circle responsive-img">
                             <img src="https://i.stack.imgur.com/34AD2.jpg " className="circle responsive-img" alt="test"></img>
@@ -21,8 +22,9 @@ function Frame(props) {
 
                     </div>
                 </div>
+
                 <div className="contianer feedContainer">
-                    <div className="col s8  ">
+                    <div className="col s12 m6 center  ">
                         <div className="feedTitle">
                             <p>Feed</p>
                         </div>
@@ -36,13 +38,14 @@ function Frame(props) {
                         </div>
                     </div>
                 </div>
-                <div className="col s2 ">
+
+                <div className="col s12 m3  right">
                     <div className="card cardMain">
                         <div className="membersList ">
 
                             <div className="members-list center-align">
                                 <p>Members</p>
-                                <p>{props.info.name}</p>
+                                <p>{props.info.members}</p>
 
                             </div>
                         </div>
@@ -51,12 +54,15 @@ function Frame(props) {
                     </div>
                 </div>
             </div>
+
             <div className="row">
-                <div className="col s2 content">
+                <div className="col s6 m3 content">
                     <div className="card games ">
                         <div className="gamesTitle center-align">
                             <p>Games played:</p>
-                            <p>{props.info.games}</p>
+                            <p>{props.info.games}
+                                {console.log(props.info)}
+                            </p>
                             <div className="row">
                                 <div className="col s3">
                                     <p>Stuff</p>
@@ -66,7 +72,7 @@ function Frame(props) {
                         </div>
                     </div>
                 </div>
-                <div className="col s2 right">
+                <div className="col s6 m3 right">
                     <div className="card cardMain">
                         <div className="discordList ">
                             <div className="discord-list center-align">

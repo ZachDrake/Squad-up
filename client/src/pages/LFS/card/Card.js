@@ -7,7 +7,7 @@ import overwatch from "./image/overwatch.png"
 
 
 function Card(props) {
-    let link = `/profile/${props.squad.name}`;
+    let link = `/squadprofile/${props.squad.name}`;
     return (
         <div className="container">
             <div className="col s12 m7">
