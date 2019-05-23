@@ -4,11 +4,12 @@ import moment from "moment"
 
 
 function Playercard(props) {
-    console.log(props);
+
+    let link = `/members/${props.member.name}`
     return (
 
         <div className="col s3">
-            <a href="/profile"><div className="card">
+            <a href={link}><div className="card">
                 <div className="card-img center-align">
                     <img className="circle responsive-img center-align" src="https://i.stack.imgur.com/34AD2.jpg" alt="test"></img>
                 </div>

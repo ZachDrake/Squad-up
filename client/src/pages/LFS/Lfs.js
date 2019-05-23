@@ -4,6 +4,7 @@ import Card from "../LFS/card/Card";
 
 
 function Lfs(props) {
+
         console.log(props);
         return (
             <div className="style">
@@ -14,7 +15,12 @@ function Lfs(props) {
             </div>
 
 
-        )
+            <h1 id="lfsTitle"> Looking for a Squad?</h1>
+            {props.squads.map(squad => <Card key={squad._id} squad={squad} />)}
+        </div>
+
+
+    )
 }
 
 

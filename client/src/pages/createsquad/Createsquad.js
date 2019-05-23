@@ -13,7 +13,7 @@ class Createsquad extends React.Component {
         discord: "",
         games: ""
     }
-   
+
     handleInputChange = event => {
         const name = event.target.name;
         console.log(name)

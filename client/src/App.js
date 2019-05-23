@@ -4,13 +4,13 @@ import './App.css';
 import Navbar from "./components/navbar/Navbar"
 import LFS from "./pages/LFS/Lfs"
 import Home from "./pages/Home/Home"
-import Profile from "./pages/Playerprofile/Profile"
+import MemberProfile from "./pages/Playerprofile/PlayerProfile"
 import Footer from "./components/Footer/Footer"
 import Squadprofile from "./pages/Squadprofile/Squadprofile"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LoginModal from "./components/LoginModal/LoginModal";
 import SignupModal from "./components/LoginModal/SignupModal";
-import Createsquad from "./pages/createsquad/Createsquad"
+import Createsquad from "./pages/Createsquad/Createsquad"
 import LFP from "./pages/LFP/Lfp"
 
 export default class App extends React.Component {
@@ -53,7 +53,7 @@ export default class App extends React.Component {
             <Route exact path="/squadprofile/*" render={(props) => <Squadprofile {...props} />} />
             <Route exact path="/lfp" render={(props) => <LFP members={this.state.members} {...props} />} />
             <Route exact path="/lfs" render={(props) => <LFS squads={this.state.squads} {...props} />} />
-            <Route exact path="/profile/*" render={(props) => <Profile {...props} />} />
+            <Route exact path="/members/*" render={(props) => <MemberProfile {...props} />} />
 
           </Switch>
 
