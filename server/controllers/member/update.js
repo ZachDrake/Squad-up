@@ -1,12 +1,21 @@
 const { Member } = require('../../models');
 
-module.exports = async ({ params: { id }, body }, res) => {
+module.exports = async ({ params: {name, memberName} }, res) => {
     try {
-        let member = await Member.findByIdAndUpdate(id, body, {new: true});
-        res.send(member);
-    } catch (err) {
-        if (err) {
-            res.send(err);
+        let squad = await res.locals.Squad.findOne({name: name});
+        console.log(squad);
+        console.log(squad._id);
+        try {
+            let member = await Member.findOne({name: memberName});
+            console.log(member);
+            member.squad.push(squad._id);
+            member.save();
+            res.send(member);
+        } catch (err) {
+            if (err) throw err;
         }
+    } catch (err){
+        if (err) throw err;
     }
+    console.log(memberName, name);
 }
