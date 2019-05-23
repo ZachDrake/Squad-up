@@ -6,20 +6,20 @@ import Frame from "./frame/Frame"
 import Axios from "axios";
 
 class Profile extends React.Component {
-    state ={
+    state = {
         squadInfo: []
     }
 
-    componentDidMount () {
+    componentDidMount() {
 
         console.log(this.props.match.params[0])
         Axios.get(`/squads/${this.props.match.params[0]}`)
-        .then( results => {
-           
-            let squadInfo = results.data;
-            console.log(results.data);
-            this.setState({ squadInfo });
-        })
+            .then(results => {
+
+                let squadInfo = results.data;
+                console.log(results.data);
+                this.setState({ squadInfo });
+            })
     }
 
     render() {
@@ -29,7 +29,7 @@ class Profile extends React.Component {
                     <Jumbo info={this.state.squadInfo} />
                     <Frame info={this.state.squadInfo} />
                 </div>
-    
+
             </div>
         )
     }

@@ -1,0 +1,46 @@
+/* Circle image */
+.responsive-img{
+   margin: auto;
+   padding: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+/* Takes the padding off the element  */
+.content, .games {
+    padding-left : 0px !important;
+}
+
+
+/* Left col stying  */
+.cardMain{
+    
+    border-radius: 25px;
+    background: #505050;
+    padding: 20px; 
+  
+}
+
+.games{
+    display: block;
+    height: 250px;
+    background: #505050;
+    padding: 20px; 
+  
+}
+
+.card-image{
+    width: 200px;
+    height: 200px;
+}
+
+.feedTitle{
+    color : white;
+}
+
+.profile-content{
+    background: #505050;
+}
+
+
+

@@ -42,7 +42,7 @@ class Createsquad extends React.Component {
                                         name="squadname"
                                         type="text"
                                         className="form-control"
-                                        id="username"
+                                        id="squadname"
                                     />
                                 </div>
 
@@ -50,11 +50,13 @@ class Createsquad extends React.Component {
                                     <h5>Squad icon</h5>
                                     <input
                                         name="squadname"
-                                        type="text"
+                                        type="file"
                                         className="form-control"
-                                        id="username"
+                                        id="squadImg"
                                     />
                                 </div>
+                            </div>
+                            <div className="row">
                                 <div className="input-field col s6 gamesSelector">
                                     <h5>Games Played</h5>
                                     <div className="createChoices">
@@ -89,40 +91,53 @@ class Createsquad extends React.Component {
                                     <div className="createChoices">
                                         <p>
                                             <label>
-                                                <input type="checkbox" />
+                                                <input name="group1" type="radio" />
                                                 <span>Pro</span>
                                             </label>
                                         </p>
                                         <p>
                                             <label>
-                                                <input type="checkbox" />
+                                                <input name="group1" type="radio" />
                                                 <span>Semi-Pro</span>
                                             </label>
                                         </p>
                                         <p>
                                             <label>
-                                                <input type="checkbox" />
+                                                <input name="group1" type="radio" />
                                                 <span>Casual</span>
                                             </label>
                                         </p>
                                         <p>
                                             <label>
-                                                <input type="checkbox" />
+                                                <input name="group1" type="radio" />
                                                 <span>Plebs</span>
                                             </label>
                                         </p>
                                     </div>
                                 </div>
-
-
-                                <a class="waves-effect waves-light btn buttonz">Submit</a>
-
-
                             </div>
+
+                            <div class="col s12">
+                                <h5>Discord</h5>
+                                https://discord.gg/
+                                    <div class="input-field inline">
+                                    <input
+                                        id="discord"
+                                        type="text"
+                                    />
+                                    <label for="discord">9WdNHaV</label>
+                                    <span class="helper-text" data-error="wrong" data-success="right">Enter the last 7 characters in your permanent discord link</span>
+                                </div>
+                            </div>
+
+
+
+                            <a className="grey darken-3 btn buttonz " href="/lfs" >Submit</a>
+
                         </form>
                     </div>
                 </div>
-            </div>
+            </div >
         )
 
     }
