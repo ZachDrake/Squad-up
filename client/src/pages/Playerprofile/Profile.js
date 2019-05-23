@@ -25,7 +25,6 @@ class Profile extends React.Component {
     render() {
         return (
             <div className="style">
-
                 <div >
                     <Jumbo info={this.state.squadInfo} />
                     <Frame info={this.state.squadInfo} />
