@@ -7,6 +7,7 @@ const MemberSchema = new Schema({
         type: String,
         trim: true,
         index: true,
+        unique: true,
         required: 'Member Name is Required'
     },
     email: {

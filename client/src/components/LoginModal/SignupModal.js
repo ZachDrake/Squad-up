@@ -1,6 +1,7 @@
 import React from "react";
 import "./Modal.css";
 import Form from "../SignupForm"; 
+import Axios from "axios";
 
 
 class Signup extends React.Component {
@@ -22,6 +23,18 @@ class Signup extends React.Component {
       handleFormSubmit = event => {
         event.preventDefault();
        console.log (this.state);
+       let newMember = {
+           name: this.state.username,
+           email: this.state.email,
+           password: this.state.password
+       }
+       Axios.post('/members/create', newMember)
+       .then(response => {
+           console.log(response);
+       })
+       .catch(err => {
+           console.log(err);
+       })
       };
 
 

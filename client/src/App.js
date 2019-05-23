@@ -50,7 +50,7 @@ export default class App extends React.Component {
 
             <Route exact path="/" render={(props) => <Home {...props} />} />
             <Route exact path="/createsquad" render={(props) => <Createsquad {...props} />} />
-            <Route exact path="/squadprofile" render={(props) => <Squadprofile {...props} />} />
+            <Route exact path="/squadprofile/*" render={(props) => <Squadprofile {...props} />} />
             <Route exact path="/lfp" render={(props) => <LFP members={this.state.members} {...props} />} />
             <Route exact path="/lfs" render={(props) => <LFS squads={this.state.squads} {...props} />} />
             <Route exact path="/profile/*" render={(props) => <Profile {...props} />} />

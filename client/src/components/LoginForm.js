@@ -9,7 +9,7 @@ function LoginForm(props) {
             <div className="modal-content login">
                 <h4>Login</h4>
                 <div className="row">
-                    <form className="col s12">
+                   
                         <div className="row">
                             <div className="input-field col s6">
                                 <input
@@ -19,7 +19,7 @@ function LoginForm(props) {
                                     type="text"
                                     className="form-control"
                                     placeholder="email"
-                                    id="email"
+                                    
                                 />
                             </div>
                         </div>
@@ -32,11 +32,10 @@ function LoginForm(props) {
                                     type="password"
                                     className="form-control"
                                     placeholder="password"
-                                    id="password"
                                 />
                             </div>
                         </div>
-                    </form>
+                    
                 </div>
             </div>
             <div className="modal-footer">

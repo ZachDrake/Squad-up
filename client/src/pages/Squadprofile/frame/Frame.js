@@ -3,6 +3,8 @@ import "./frame.css"
 
 
 function Frame(props) {
+    console.log(props.info.members)
+    
     return (
         <div className="container">
             <div className="row">
@@ -14,7 +16,7 @@ function Frame(props) {
 
                         <div className=" profile ">
                             <div className="profile-content center-align">
-                                <p>{props.info.name}</p>
+                                <h5>{props.info.name}</h5>
                             </div>
                         </div>
 
@@ -42,7 +44,7 @@ function Frame(props) {
 
                             <div className="members-list center-align">
                                 <p>Members</p>
-                                <p>{props.info.name}</p>
+                                <p>{props.info.members}</p>
 
                             </div>
                         </div>
@@ -59,7 +61,7 @@ function Frame(props) {
                             <p>{props.info.games}</p>
                             <div className="row">
                                 <div className="col s3">
-                                    <p>Stuff</p>
+                                    <p>{}</p>
 
                                 </div>
                             </div>
@@ -70,8 +72,8 @@ function Frame(props) {
                     <div className="card cardMain">
                         <div className="discordList ">
                             <div className="discord-list center-align">
-                                <p>Discords</p>
-                                <p>{props.info.name}</p>
+                                <p>Discord Information</p>
+                                <p>{props.info.discord}</p>
 
                             </div>
                         </div>
