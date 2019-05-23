@@ -3,8 +3,6 @@ import "./frame.css"
 
 
 function Frame(props) {
-    console.log(props.info.members)
-    
     return (
         <div className="container squadMainContent">
             <div className="row">
@@ -34,7 +32,7 @@ function Frame(props) {
                         <div className="card horizontal">
                             <div className="card-stacked">
                                 <div className="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                    <p>Coming soon...</p>
                                 </div>
                             </div>
                         </div>
@@ -46,9 +44,8 @@ function Frame(props) {
                         <div className="membersList ">
 
                             <div className="members-list center-align">
-                                <p>Members</p>
-                                <p>{props.info.members}</p>
-
+                                <h5>Members</h5>
+                                {props.info.members.map(member => <p>{member.name}</p>)}
                             </div>
                         </div>
 
@@ -61,10 +58,8 @@ function Frame(props) {
                 <div className="col s6 m3 content">
                     <div className="card games ">
                         <div className="gamesTitle center-align">
-                            <p>Games played:</p>
-                            <p>{props.info.games}
-                                {console.log(props.info)}
-                            </p>
+                            <h5>Games played:</h5>
+                            <p>{props.info.games}</p>
                             <div className="row">
                                 <div className="col s3">
                                     <p>{}</p>
@@ -78,7 +73,7 @@ function Frame(props) {
                     <div className="card cardMain">
                         <div className="discordList ">
                             <div className="discord-list center-align">
-                                <p>Discord Information</p>
+                                <h5>Discord Information</h5>
                                 <p>{props.info.discord}</p>
 
                             </div>
