@@ -7,15 +7,6 @@ import "./createsquad.css"
 class Createsquad extends React.Component {
     state = {
     }
-    /* 
-    Create form with keys of 
-        Name of Squad
-        Squad icon
-        Games the Squad plays
-        What type of Squad (try hard or other)
-    
-    
-    */
 
     handleInputChange = event => {
         const name = event.target.name;

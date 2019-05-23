@@ -16,23 +16,20 @@ app.use(express.static('public'));
 
 app.use(require('./routes'));
 
-app.get('/hello', (req, res) => {
+app.get('/', (req, res) => {
 
-    res.send('hello');
+    res.send('');
 });
 
 app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/public/index.html'))
+    res.sendFile(path.join(__dirname, '../client/public/', '../client/public/index.html'))
 });
 
 
 
 
 
-
-
-
-app.listen(PORT,function () {
+app.listen(PORT, function () {
     console.log(`App running on port ${PORT}...`);
 });
 

@@ -17,9 +17,10 @@ function LoginForm(props) {
                                     value={props.email}
                                     name="email"
                                     type="text"
+                                    autoComplete="username"
                                     className="form-control"
                                     placeholder="email"
-                                    id="email"
+                                    id="#email"
                                 />
                             </div>
                         </div>
@@ -32,7 +33,8 @@ function LoginForm(props) {
                                     type="password"
                                     className="form-control"
                                     placeholder="password"
-                                    id="password"
+                                    autoComplete="current-password"
+                                    id="#password"
                                 />
                             </div>
                         </div>
