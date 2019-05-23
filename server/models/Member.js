@@ -20,7 +20,7 @@ const MemberSchema = new Schema({
         trim: true,
         required: 'A Password is Required'
     },
-    squad: [
+    squads: [
         {
             type: Schema.Types.ObjectId,
             ref: 'Squad'

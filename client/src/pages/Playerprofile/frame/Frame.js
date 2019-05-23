@@ -1,10 +1,10 @@
 import React from "react";
 import "./frame.css"
+import moment from "moment";
 
 
 function Frame(props) {
-
-    console.log(props)
+    console.log(props.info.squads)
     return (
         <div className="container">
             <div className="row">
@@ -17,7 +17,7 @@ function Frame(props) {
                         <div className="card horizontal">
                             <div className="card-stacked">
                                 <div className="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                    <p>Coming soon...</p>
                                 </div>
                             </div>
                         </div>
@@ -31,7 +31,7 @@ function Frame(props) {
 
                         <div className=" profile ">
                             <div className="profile-content center-align">
-                                <p>{props.info.name}</p>
+                                <h5>{props.info.name}</h5>
                             </div>
                         </div>
                     </div>
@@ -41,12 +41,13 @@ function Frame(props) {
                 <div className="col s12 m3  gamesPlay">
                     <div className="card games ">
                         <div className="gamesTitle center-align">
-                            <p>Games played:</p>
-                            <p>{props.info.games}</p>
+                            <h5>Date joined:</h5>
+                            <p>{moment(props.info.createdAt).format('LL')}</p>
+                            <h5>Squads:</h5>
+                            {props.info.squads.map(squad => <p>{squad.name}</p>)}
                             <div className="row">
                                 <div className="col s3">
-                                    <p>Stuff</p>
-
+                                
                                 </div>
                             </div>
                         </div>

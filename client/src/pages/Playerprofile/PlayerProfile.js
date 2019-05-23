@@ -7,18 +7,18 @@ import Axios from "axios";
 
 class Profile extends React.Component {
     state = {
-        squadInfo: []
+        memberInfo: {
+            squads: []
+        }
     }
 
     componentDidMount() {
-
-        console.log(this.props.match.params)
         Axios.get(`/members/profile/${this.props.match.params[0]}`)
             .then(results => {
-                console.log(results)
-                let squadInfo = results;
-                console.log(results)
-                this.setState({ squadInfo });
+               
+                let memberInfo = results.data;
+                console.log(memberInfo)
+                this.setState({ memberInfo });
             })
     }
 
@@ -26,8 +26,8 @@ class Profile extends React.Component {
         return (
             <div className="style">
                 <div >
-                    <Jumbo info={this.state.squadInfo} />
-                    <Frame info={this.state.squadInfo} />
+                    <Jumbo info={this.state.memberInfo} />
+                    <Frame info={this.state.memberInfo} />
                 </div>
 
             </div>

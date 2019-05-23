@@ -6,7 +6,9 @@ import Axios from "axios";
 
 class Squadprofile extends React.Component {
     state = {
-        squadInfo: []
+        squadInfo: {
+            members: []
+        }
     }
 
     componentDidMount() {
@@ -14,10 +16,11 @@ class Squadprofile extends React.Component {
         console.log(this.props.match.params[0])
         Axios.get(`/squads/profile/${this.props.match.params[0]}`)
             .then(results => {
-
                 let squadInfo = results.data;
                 // console.log(results.data);
-                this.setState({ squadInfo });
+                this.setState({ squadInfo }, () => {
+                    console.log(this.state)
+                });
             })
     }
 
