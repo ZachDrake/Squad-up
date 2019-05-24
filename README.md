@@ -36,6 +36,12 @@
   
   ## Design
   
-  *This is a rough skeleton, it will look freshhhh later*
+  *This is a rough skeleton*
  
  ![design](design.png)
+ 
+ ## Author 
+  
+  * Zachary Drake - github.com/ZachDrake
+  * Jalen Okutsu - github.com/jokatsu
+  * Calvin Fronda - github.com/calvinfronda
