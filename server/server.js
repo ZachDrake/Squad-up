@@ -4,7 +4,7 @@ const express = require('express'),
     path = require('path');
 
 require('./connection');
-// const config = require('config'); 
+
 
 let PORT = process.env.PORT || 3001;
 
@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/public/index.html'));
+    res.sendFile(path.join(__dirname, '../client/public', '../public/index.html'));
 });
 
 
