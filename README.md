@@ -42,6 +42,6 @@
  
  ## Author 
   
-  * [Zachary Drake](github.com/ZachDrake)
-  * [Jalen Okutsu](github.com/jokatsu)
-  * [Calvin Fronda](github.com/calvinfronda)
+  * [Zachary Drake](https://github.com/ZachDrake)
+  * [Jalen Okutsu](https://github.com/jokatsu)
+  * [Calvin Fronda](https://github.com/calvinfronda)
