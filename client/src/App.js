@@ -10,7 +10,7 @@ import Squadprofile from "./pages/Squadprofile/Squadprofile"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LoginModal from "./components/LoginModal/LoginModal";
 import SignupModal from "./components/LoginModal/SignupModal";
-import Createsquad from "./pages/createsquad/Createsquad"
+import Createsquad from "./pages/Createsquad/Createsquad"
 
 import LFP from "./pages/LFP/Lfp"
 

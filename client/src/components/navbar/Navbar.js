@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom"
 import "./navbar.css"
 import M from "materialize-css/dist/js/materialize.min.js";
 
@@ -34,12 +34,12 @@ class Navbar extends React.Component {
                 <nav>
                     <div className="nav-wrapper">
                         <div className="container">
-                            <a href="/" className="brand-logo">Logo</a>
+                            <Link to="/" className="brand-logo">Logo</Link>
                             <a href="/" data-target="slide-out" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                             <ul className="right hide-on-med-and-down">
-                                <li className="createSquad"><a href="/createsquad">Create a Squad</a></li>
-                                <li className="lfs"><a href="/lfs">Squads</a></li>
-                                <li className="lfp"><a href="/lfp">Players</a></li>
+                                <li className="createSquad"><Link to="/createsquad">Create a Squad</Link></li>
+                                <li className="lfs"><Link to="/lfs">Squads</Link></li>
+                                <li className="lfp"><Link to="/lfp">Players</Link></li>
                                 <li className="Login"> <a className="modal-trigger" href="#modal1">Login</a></li>
                                 <li className="signUp"><a className="modal-trigger" href="#modal2">Sign Up</a></li>
                             </ul>
@@ -48,15 +48,15 @@ class Navbar extends React.Component {
                 </nav>
 
                 <ul className="sidenav" id="slide-out" style={{ marginTop: "7vh" }}>
-                    <li className="lfs sidenav-close "><a href="/createsquad">Create a Squad</a></li>
-                    <li className="lfs sidenav-close "><a href="/lfs">Squads</a></li>
-                    <li className="lfp  sidenav-close"><a href="/lfp">Players</a></li>
+                    <li className="lfs sidenav-close "><Link to="/createsquad">Create a Squad</Link></li>
+                    <li className="lfs sidenav-close "><Link to="/lfs">Squads</Link></li>
+                    <li className="lfp  sidenav-close"><Link to="/lfp">Players</Link></li>
                     <li className="login  sidenav-close"><a className="modal-trigger" href="#modal1">Login</a></li>
                     <li className="signUp sidenav-close"><a className="modal-trigger" href="#modal2">Sign Up</a></li>
 
                 </ul>
 
-            </div>
+            </div >
 
 
         )
