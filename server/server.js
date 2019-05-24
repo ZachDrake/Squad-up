@@ -4,6 +4,7 @@ const express = require('express'),
     path = require('path');
 
 require('./connection');
+// const config = require('config'); 
 
 let PORT = process.env.PORT || 3001;
 

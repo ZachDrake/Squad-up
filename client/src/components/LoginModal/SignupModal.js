@@ -28,9 +28,10 @@ class Signup extends React.Component {
            email: this.state.email,
            password: this.state.password
        }
+
        Axios.post('/members/create', newMember)
        .then(response => {
-           console.log(response);
+           console.log(response.data.token);
        })
        .catch(err => {
            console.log(err);
