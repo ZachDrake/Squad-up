@@ -16,8 +16,7 @@ const SquadSchema = new Schema({
     },
     description: {
         type: String,
-        trim: true,
-        required: 'Squad Description is Required'
+        trim: true
     },
     squadType: {
         type: String
@@ -27,7 +26,7 @@ const SquadSchema = new Schema({
         trim: true,
     },
     games: {
-        type: String,
+        type: Array,
         required: 'At least one game your squad plays is required'
     },
     ranks: [
