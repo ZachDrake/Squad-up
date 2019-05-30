@@ -1,6 +1,6 @@
 import React from "react";
 import "./createsquad.css"
-// import Axios from "axios";
+import Axios from "axios";
 
 
 
@@ -38,7 +38,6 @@ class Createsquad extends React.Component {
 
     handleFormSubmit = event => {
         event.preventDefault();
-        console.log("hit");
         let newSquad = {
             name: this.state.squadname,
             logo: this.state.logo,
@@ -47,7 +46,14 @@ class Createsquad extends React.Component {
             discord: this.state.discord,
             games: this.state.games
         }
-        console.log(newSquad);
+
+        Axios.post('/squads/create', newSquad)
+        .then(response => {
+            console.log(response)
+        })
+        .catch(err => {
+            console.log(err)
+        })
     }
 
 
