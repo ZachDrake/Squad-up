@@ -45,15 +45,16 @@ class Createsquad extends React.Component {
             squadType: this.state.squadType,
             discord: this.state.discord,
             games: this.state.games
+
         }
 
         Axios.post('/squads/create', newSquad)
-        .then(response => {
-            console.log(response)
-        })
-        .catch(err => {
-            console.log(err)
-        })
+            .then(response => {
+                console.log(response)
+            })
+            .catch(err => {
+                console.log(err)
+            })
     }
 
 
@@ -84,9 +85,10 @@ class Createsquad extends React.Component {
                                 <h5>Squad icon</h5>
                                 <input
                                     name="logo"
-                                    type="file"
+                                    type="text"
                                     className="form-control"
                                     id="squadImg"
+                                    placeholder="Link to an Image"
                                     onChange={this.handleInputChange}
                                 />
                             </div>
@@ -200,7 +202,6 @@ class Createsquad extends React.Component {
                                     id="discord"
                                     type="text"
                                     onChange={this.handleInputChange}
-                                    handleFormSubmit={this.handleFormSubmit}
                                 />
                                 <span className="helper-text" data-error="wrong" data-success="right">Enter the last 7 characters in your permanent discord link</span>
                             </div>
