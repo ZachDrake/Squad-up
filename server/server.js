@@ -1,7 +1,6 @@
 const express = require('express'),
     app = express(),
-    logger = require('morgan'),
-    path = require('path');
+    logger = require('morgan')
 
 require('./connection');
 
@@ -17,9 +16,6 @@ app.use(express.static('public'));
 
 app.use(require('./routes'));
 
-app.get('/', (req, res) => {
-    res.send('');
-});
 
 app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/public', '../public/index.html'));
