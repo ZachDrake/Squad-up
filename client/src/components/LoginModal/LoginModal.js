@@ -1,7 +1,7 @@
 import React from "react";
 import "./Modal.css";
 import LoginForm from "../LoginForm";
-
+import Axios from 'axios'; 
 
 class LoginModal extends React.Component {
 
@@ -21,7 +21,18 @@ class LoginModal extends React.Component {
 
       handleFormSubmit = event => {
         event.preventDefault();
+        let member = {
+          email: this.state.email,
+          password:this.state.password,
+        }
         console.log (this.state);
+        Axios.post('/members/login', member)
+        .then(response => {
+            console.log('done');
+        })
+        .catch(err => {
+            console.log(err);
+        })
         
       };
 

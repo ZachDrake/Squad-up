@@ -10,9 +10,23 @@ import Squadprofile from "./pages/Squadprofile/Squadprofile"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LoginModal from "./components/LoginModal/LoginModal";
 import SignupModal from "./components/LoginModal/SignupModal";
-import Createsquad from "./pages/Createsquad/Createsquad"
+import Createsquad from "./pages/createsquad/Createsquad"
 
 import LFP from "./pages/LFP/Lfp"
+
+    //   function getCookie(c_name) {
+        
+    //     var i, x, y, ARRcookies = document.cookie.split(";");
+    //     for (i = 0; i < ARRcookies.length; i++) {
+    //         x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+    //         y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+    //         x = x.replace(/^\s+|\s+$/g, "");
+    //         if (x === c_name) {
+    //             return unescape(y);
+    //         }
+    //     }
+    // }
+    
 
 export default class App extends React.Component {
   state = {
@@ -21,6 +35,9 @@ export default class App extends React.Component {
 
   }
 
+  
+
+  
   componentDidMount() {
     axios.get('/squads/all')
       .then(result => {
@@ -29,17 +46,22 @@ export default class App extends React.Component {
       }).catch(err => {
         if (err) throw err;
       });
-
-    axios.get('/members/all')
+      
+      axios.get('/members/all')
       .then(result => {
         let members = result.data;
         this.setState({ members })
       }).catch(err => {
         if (err) throw err;
       });
-  }
-
-  render() {
+      
+   
+    }
+    
+    
+    render() {
+    console.log(document);
+   
     return (
       <Router>
         <div>
@@ -65,3 +87,4 @@ export default class App extends React.Component {
     )
   }
 }
+

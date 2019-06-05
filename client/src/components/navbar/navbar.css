@@ -15,9 +15,11 @@ nav{
 
 }
 
-.brand-logo {
+.brand-logo > img{
     display: inline;
-    background-color :#0f0a0a
+    width:100px;
+    height:100px;
+    margin-top:-21px;
     
 }
 
