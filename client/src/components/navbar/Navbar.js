@@ -3,6 +3,8 @@ import { Link } from "react-router-dom"
 import "./navbar.css"
 import M from "materialize-css/dist/js/materialize.min.js";
 
+import knighto from './../../images/knighto.png'
+
 // import {BrowseRouter as Router, Route, Switch} from "react-router-dom"; 
 
 
@@ -20,21 +22,21 @@ class Navbar extends React.Component {
 
             });
 
-
-
         })
 
 
     }
-
+    
     render() {
+        
+        console.log(this.props.greeting); 
         return (
 
             <div style={{ position: "absolute", width: "100%" }}>
                 <nav>
                     <div className="nav-wrapper">
                         <div className="container">
-                            <Link to="/" className="brand-logo">Logo</Link>
+                            <Link to="/" className="brand-logo"><img alt="logo" src={knighto} /></Link>
                             <a href="/" data-target="slide-out" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                             <ul className="right hide-on-med-and-down">
                                 <li className="createSquad"><Link to="/createsquad">Create a Squad</Link></li>
